@@ -267,3 +267,23 @@ a:hover{
   color: #12445c;
   text-decoration: none;
 }
+
+code{
+  background-color: #eff2bc;
+  padding: 10px;
+  font-size: .85em;
+  font-family: Courier;
+  margin: 5px;
+}
+
+code_id{
+  color: #40beee;
+}
+
+code_span{
+  color: #696868;
+}
+
+code_num{
+color: #ed0972;
+}
