@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nell Taylor | Digital Strategy, UX, Data, SEO</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"
+  </head>
+
+<body>
+  <div id="nav">
+    <ul>
+      <li><a href="/index.html"><img src="../imgs/logo.gif" /></a>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div id="blog-headline">
+    <h1>Blog Headline (Coming soon)</h1>
+    <h2>Blog Sub-Head (Coming soon)</h2>
+  </div>
+  <div id="content-wrap">
+    <div class="current-post">
+      <div class="blog-title">
+        <span>Phase 0 Week 4 Technical Blog: Enumerable Methods</span> <span1>By: <strong>Nell Taylor</strong>  |  11-2-14</span1>
+      </div>
+        <div>
+          <img src="../imgs/placeholder.gif" />
+          <p><a href="http://ruby-doc.org/core-1.9.3/Enumerable.html#method-i-map" target="_blank" rel="nofollow">Map</a> is an enumerable method that does two very important things:
+
+            1) It alters every element of an array when combined with block of code and another method (optional) that instructs it on how those elements should be altered.
+            2) It returns a new array of those altered elements, rather than changing them in the original array.
+
+          Therefore, map is a non-destructive method that can be incredibly powerful for increasing the functionality of other methods and producing new arrays for you to work with. (And, if you just want to have #1 without the new array, you can use map!, the destructive version.)
+
+          Say that you had an array of family members' names, but you were all going into witness protection and wanted to see test out some different last names to see which ones you like best. You don't want to alter the original array because then you wouldn't be able to keep modifying it as many times or as easily as you'd like. You could do something like this:
+
+          <code><code_id>names</code_id> <code_span>= [<code_num>"John"</code_num>, <code_num>"Jane"</code_num>, <code_num>"Billy"</code_num>, <code_num>"Suzy"</code_num>].map{ |<code_num>a</code_num>| <code_num>a</code_num> + <code_num>" Mermelstein"</code_num> }</code_span><br />#=> John Mermelstein Jane Mermelstein Billy Mermelstein Suzy Mermelstein</p></code>
+          </p>
+        </div>
+    </div>
+    <div class="recent-posts">
+      <p><strong>Recent Posts</strong></p>
+      <a href="c4-tech-issues.html"><div class="single-r-post">
+        <img src="../imgs/placeholder.gif" />
+        <strong>Tech Issues</strong> 11-2-14
+      </div></a>
+      <a href="c3-thinking-style.html"><div class="single-r-post">
+        <img src="../imgs/placeholder.gif" />
+        <strong>Thinking Style</strong> 10-26-14
+      </div></a>
+      <a href="t3-arrays-hashes.html"><div class="single-r-post">
+        <img src="../imgs/placeholder.gif" />
+        <strong>Arrays Vs. Hashes</strong> 10-26-14
+      </div></a>
+    <div class="older-posts">
+      <p><strong>Older Posts</strong></p>
+      <a href="#">2014</a> <a href="#">2015</a></p>
+    </div>
+  </div>
+  <div id="footer">
+    <ul>
+      <li><a href="/index.html"><img src="../imgs/logo.gif" /></a>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</body>
+</html>
