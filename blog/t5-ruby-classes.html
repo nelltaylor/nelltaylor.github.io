@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nell Taylor | Digital Strategy, UX, Data, SEO</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"
+  </head>
+
+<body>
+  <div id="nav">
+    <ul>
+      <li><a href="/index.html"><img src="../imgs/logo.gif" /></a>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div id="blog-headline">
+    <h1>Blog Headline (Coming soon)</h1>
+    <h2>Blog Sub-Head (Coming soon)</h2>
+  </div>
+  <div id="content-wrap">
+    <div class="current-post">
+      <div class="blog-title">
+        <span>Phase 0 Week 5 Technical Blog: Classes in Ruby</span> <span1>By: <strong>Nell Taylor</strong>  |  11-2-14</span1>
+      </div>
+        <div>
+          <img src="../imgs/placeholder.gif" />
+          <p>A class is where you group all of the methods and variables about an object you'll be using in Ruby. It lets you "model" the object so that you can define every property of the object (its variables) and everything that can be done to the object (methods that can act on the object).
+
+          Below, I created a sample class called Cats to model the characteristics and behaviors of any objects that are part of this class — namely, other cats. We initialize the class with some essential instance variables that we know we're going to want to use across the different methods found in this class. In order to make them "instance" variables instead of just plain old variables, we add a @ character in front of them.
+
+          If you want to change the name, hours, or cans for an different object in this class, it's easy to do by simply calling that method on an instance of the class and setting it to a new value. Example: instance_of_cats.name = "Other Cat."
+
+          You'll see that in this example I created a new instance called "hoarder." "Hoarder", unsurprisingly, creates more cats. If you call the method tell_me_all_about_your_cat, hoarder will tell you everything about that new cat.
+
+          You may look at this and say, "That can't possibly be everything that I'd want to know about your cat," and you'd be right. That's the beauty of classes &em; they're flexible, and you can add to them. That's why it's important to establish a consistent approach to the logic of methods and variables within your class. It's much easier to read and revisit your class to extend it (and communicate it to other people) if you have a logical approach to how it should get extended. Two approaches to class design are outlined here &em; <a href="https://practicingruby.com/articles/responsibility-centric-vs-data-centric-design" target="_blank" rel="nofollow">data-centric and responsibility-centric</a>.
+
+              class Cats
+
+              attr_accessor :name, :hours, :cans
+
+              def initialize
+                @name = "Meow Meow"
+                @hours = 8
+                @cans = 4
+              end
+
+              # If this cat weighs more than 20 pounds, he sleeps twice as much.
+              def sleep(pounds)
+                @naptime = {
+                  if pounds > 20
+                    return @hours*2
+                  else
+                    return @hours
+                  end
+                }
+              puts @naptime
+              end
+
+              # If this cat sleeps twice as much, then he's going to be even hungrier when he wakes up.
+              def eat
+                @new_cans = {
+                  if @naptime > @hours
+                    return @cans+1
+                  else
+                    return @cans
+                  end
+                }
+              end
+
+              # I'm sure you really wanted to know all this info about my cat.
+              def tell_me_all_about_your_cat
+                "#{@name} sleeps #{@naptime} and eats #{@new_cans} cans of cat food a day."
+              end
+            end
+
+              hoarder = Cats.new
+              puts hoarder.tell_me_all_about_your_cat
+          </p>
+        </div>
+    </div>
+    <div class="recent-posts">
+      <p><strong>Recent Posts</strong></p>
+      <a href="t4-enumerable-methods.html"><div class="single-r-post">
+        <img src="../imgs/placeholder.gif" />
+        <strong>Enumerable Methods: Map</strong> 11-2-14
+      </div></a>
+      <a href="t3-arrays-hashes.html"><div class="single-r-post">
+        <img src="../imgs/placeholder.gif" />
+        <strong>Arrays Vs. Hashes</strong> 10-26-14
+      </div></a>
+      <a href="t2-css-design.html"><div class="single-r-post">
+        <img src="../imgs/placeholder.gif" />
+        <strong>Blocks, Inline, &amp; Inline Blocks</strong> 10-19-14
+      </div></a>
+    <div class="older-posts">
+      <p><strong>Older Posts</strong></p>
+      <a href="#">2014</a> <a href="#">2015</a></p>
+    </div>
+  </div>
+  <div id="footer">
+    <ul>
+      <li><a href="/index.html"><img src="../imgs/logo.gif" /></a>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</body>
+</html>
