@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nell Taylor | Digital Strategy, UX, Data, SEO</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"
+  </head>
+
+<body>
+  <div id="nav">
+    <ul>
+      <li><a href="/index.html"><img src="../imgs/logo.gif" /></a>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div id="blog-headline">
+    <h1>Blog Headline (Coming soon)</h1>
+    <h2>Blog Sub-Head (Coming soon)</h2>
+  </div>
+  <div id="content-wrap">
+    <div class="current-post">
+      <div class="blog-title">
+        <span>Phase 0 Week 6 Technical Blog: Modules vs. Classes</span> <span1>By: <strong>Nell Taylor</strong>  |  11-2-14</span1>
+      </div>
+        <div>
+          <img src="../imgs/placeholder.gif" />
+          <p>Modules and classes in Ruby may seem very similar at first, as they can both be used to group methods and variables. While they both serve the purpose of operating in concert with other Ruby classes and objects to define and share their functionality, one of the easiest differences to remember to keep them straight is that a class can be instantiated while a module cannot.
+
+          What this means is that since a class is a group of methods and variables that "model" a group of similar objects, you can instantiate a class &em; create an "instance" of it &em; which gives you a new object with all of the properties of that class that you can then add to and customize to suit that particular object. With a module, you cannot instantiate a new object from it, you can simply reference it in a class to extend the functionality of that module to the class. Where it gets even trickier is that classes can be part of a module's code. However, in order to include the functionality of a module within a class, the module file has to be linked to the class using either "load," "include", "require," or "extend."
+
+          So what is a module useful for if you can't create new objects from it? A module is a series of methods and variables defined within a file <em>separate from</em> a single class so that the module's properties can be shared across multiple classes. A good example of why you might want to use a module would be something that changes the behavior of all classes it affects depending on what the method stored in it returns &em; an authentication, for instance. This common use of modules &em; to extend and mix in properties of a module as if it were actually a superclass of the class its affecting &em; is therefore called a <em>mixin</em> for a very good reason.
+          </p>
+        </div>
+    </div>
+    <div class="recent-posts">
+      <p><strong>Recent Posts</strong></p>
+      <a href="t4-enumerable-methods.html"><div class="single-r-post">
+        <img src="../imgs/placeholder.gif" />
+        <strong>Enumerable Methods: Map</strong> 11-2-14
+      </div></a>
+      <a href="t3-arrays-hashes.html"><div class="single-r-post">
+        <img src="../imgs/placeholder.gif" />
+        <strong>Arrays Vs. Hashes</strong> 10-26-14
+      </div></a>
+      <a href="t2-css-design.html"><div class="single-r-post">
+        <img src="../imgs/placeholder.gif" />
+        <strong>Blocks, Inline, &amp; Inline Blocks</strong> 10-19-14
+      </div></a>
+    <div class="older-posts">
+      <p><strong>Older Posts</strong></p>
+      <a href="#">2014</a> <a href="#">2015</a></p>
+    </div>
+  </div>
+  <div id="footer">
+    <ul>
+      <li><a href="/index.html"><img src="../imgs/logo.gif" /></a>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</body>
+</html>
