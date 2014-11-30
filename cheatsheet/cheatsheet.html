@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cheatsheet </title>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/cheatsheet.css">
+  </head>
+<body>
+<header>
+  <h1>Cheatsheet: Looping in Ruby vs. JavaScript</h1>
+  <p> Joseph Won & Nell Taylor </p>
+</header>
+<div class="container">
+    <section class="subtopic">
+      <h2>Ruby Examples</h2>
+      <p>Ruby and JavaScript don't have 1:1 comparisons of every different type of loop. We'll show you Ruby loops first, then JavaScript.</p>
+    </section>
+    <section class="subtopic">
+      <h2>Ruby: For Loops</h2>
+      <p>Input</p>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #66d9ef">in</span> <span style="color: #ae81ff">0</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">.</span><span style="color: #ae81ff">5</span>
+  <span style="color: #f8f8f2">puts</span> <span style="color: #f8f8f2">i</span>
+<span style="color: #66d9ef">end</span>
+        </pre></div>
+        <p>Output</p>
+        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">0
+1
+2
+3
+4
+5
+        </pre></div>
+    </section>
+    <section class="subtopic">
+      <h2>Ruby: While Loop</h2>
+      <p>Input</p>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f8f8f2">count</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span>
+
+<span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">count</span> <span style="color: #f92672">&lt;</span> <span style="color: #ae81ff">5</span> <span style="color: #66d9ef">do</span>
+    <span style="color: #f8f8f2">puts</span> <span style="color: #e6db74">&quot;continuing program..&quot;</span>
+    <span style="color: #f8f8f2">count</span> <span style="color: #f92672">+=</span> <span style="color: #ae81ff">1</span>
+<span style="color: #66d9ef">end</span>
+    </pre></div>
+   <p>Output</p>
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">continuing program..
+continuing program..
+continuing program..
+continuing program..
+continuing program..
+    </pre></div>
+    </section>
+    <section class="subtopic">
+      <h2>Ruby: Until Loop with Begin/End</h2>
+      <p>Input</p>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f8f8f2">stars</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span>
+
+<span style="color: #66d9ef">begin</span>
+
+  <span style="color: #f8f8f2">puts</span> <span style="color: #e6db74">&quot;counting the stars..&quot;</span>
+  <span style="color: #f8f8f2">stars</span><span style="color: #f92672">+=</span><span style="color: #ae81ff">1</span>
+
+<span style="color: #66d9ef">end</span> <span style="color: #66d9ef">until</span> <span style="color: #f8f8f2">stars</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">5</span>
+</pre></div>
+      <p>Output</p>
+        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">counting the stars..
+counting the stars..
+counting the stars..
+counting the stars..
+counting the stars..
+        </pre></div>
+    </section>
+    <section class="subtopic">
+      <h2>Ruby: Using the .each method</h2>
+      <p>Input</p>
+        <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">0</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">.</span><span style="color: #ae81ff">5</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">each</span> <span style="color: #66d9ef">do</span> <span style="color: #f92672">|</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">|</span>
+  <span style="color: #f8f8f2">puts</span> <span style="color: #f8f8f2">i</span>
+<span style="color: #66d9ef">end</span>
+    </pre></div>
+      <p>Output</p>
+        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">0
+1
+2
+3
+4
+5
+</pre></div>
+    </section>
+    <section class="subtopic">
+      <h2>JavaScript: For Loop</h2>
+      <p>Input</p>
+        <div style="background: #111111; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">(i</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">;</span> <span style="color: #ffffff">i&lt;</span><span style="color: #0086f7; font-weight: bold">6</span><span style="color: #ffffff">;</span> <span style="color: #ffffff">i++)</span> <span style="color: #ffffff">{</span>
+  <span style="color: #ffffff">console.log(i);</span>
+  <span style="color: #ffffff">}</span>
+  </pre></div>
+      <p>Output</p>
+        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">0
+1
+2
+3
+4
+5
+</pre></div>
+    </section>
+    <section class="subtopic">
+      <h2>JavaScript Examples</h2>
+      <p>These are the JavaScript examples.</p>
+    </section>
+    <section class="subtopic">
+      <h2>JavaScript: For Loop -- multiple first statements</h2>
+      <p>Input</p>
+        <div style="background: #111111; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">(</span> <span style="color: #ffffff">i</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">word=</span><span style="color: #0086d2">&quot;hello&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">len</span> <span style="color: #ffffff">=word.length;</span> <span style="color: #ffffff">i&lt;len;</span> <span style="color: #ffffff">i++</span> <span style="color: #ffffff">)</span> <span style="color: #ffffff">{</span>
+  <span style="color: #ffffff">console.log(word.charAt(i))</span>
+  <span style="color: #ffffff">}</span>
+</pre></div>
+      <p>Output</p>
+      <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">h
+e
+l
+l
+o
+</pre></div>
+    </section>
+    <section class="subtopic">
+      <h2>JavaScript: For Loop -- Optional first statements</h2>
+      <p>Input</p>
+      <div style="background: #111111; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #ffffff">i</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">;</span>
+
+<span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">(;</span> <span style="color: #ffffff">i&lt;</span><span style="color: #0086f7; font-weight: bold">6</span><span style="color: #ffffff">;</span> <span style="color: #ffffff">i++)</span> <span style="color: #ffffff">{</span>
+    <span style="color: #ffffff">console.log(i);</span>
+<span style="color: #ffffff">}</span>
+</pre></div>
+    <p>Output</p>
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">0
+1
+2
+3
+4
+5
+</pre></div>
+    </section>
+    <section class="subtopic">
+      <h2>JavaScript: For/In Loop</h2>
+      <p>Input</p>
+      <div style="background: #111111; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">person</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">{fname:</span><span style="color: #0086d2">&quot;John&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">lname:</span><span style="color: #0086d2">&quot;Doe&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">age:</span><span style="color: #0086f7; font-weight: bold">25</span><span style="color: #ffffff">};</span>
+
+<span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">text</span> <span style="color: #ffffff">=</span> <span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">;</span>
+<span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">x;</span>
+<span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">(x</span> <span style="color: #fb660a; font-weight: bold">in</span> <span style="color: #ffffff">person)</span> <span style="color: #ffffff">{</span>
+    <span style="color: #ffffff">text</span> <span style="color: #ffffff">+=</span> <span style="color: #0086d2">&quot; &quot;</span><span style="color: #ffffff">+person[x];</span>
+<span style="color: #ffffff">}</span>
+</pre></div>
+    <p>Output</p>
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #a31515">&#39; John Doe 25&#39;</span>
+</pre></div>
+    </section>
+    <section class="subtopic">
+      <h2>JavaScript: While Loop</h2>
+      <p>Input</p>
+<div style="background: #111111; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #ffffff">text</span> <span style="color: #ffffff">=</span> <span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">;</span>
+<span style="color: #ffffff">i=</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">;</span>
+
+<span style="color: #fb660a; font-weight: bold">while</span> <span style="color: #ffffff">(i</span> <span style="color: #ffffff">&lt;</span> <span style="color: #0086f7; font-weight: bold">6</span><span style="color: #ffffff">)</span> <span style="color: #ffffff">{</span>
+    <span style="color: #ffffff">text</span> <span style="color: #ffffff">+=</span> <span style="color: #0086d2">&quot;bump &quot;</span><span style="color: #ffffff">;</span>
+    <span style="color: #ffffff">i++;</span>
+<span style="color: #ffffff">}</span>
+
+<span style="color: #ffffff">console.log(text);</span>
+</pre></div>
+      <p>Output</p>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">bump bump bump bump bump bump
+</pre></div>
+    </section>
+    <section class="subtopic">
+      <h2>JavaScript: Other Ways to Use For</h2>
+      <p>Input</p>
+      <div style="background: #111111; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #ffffff">friends</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;Jim&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;Henry&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;Sara&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;Hank&quot;</span><span style="color: #ffffff">];</span>
+<span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">i</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">;</span>
+<span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">text</span> <span style="color: #ffffff">=</span> <span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">;</span>
+
+<span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">(;friends[i];)</span> <span style="color: #ffffff">{</span>
+    <span style="color: #ffffff">text</span> <span style="color: #ffffff">+=</span> <span style="color: #ffffff">friends[i]</span> <span style="color: #ffffff">+</span> <span style="color: #0086d2">&quot;&lt;br&gt;&quot;</span><span style="color: #ffffff">;</span>
+    <span style="color: #ffffff">i++;</span>
+<span style="color: #ffffff">}</span>
+
+<span style="color: #ffffff">console.log(text)</span>
+</pre></div>
+      <p>Output</p>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Jim
+Henry
+Sara
+Hank
+</pre></div>
+    </section>
+  </div>
+</body>
+</html>
