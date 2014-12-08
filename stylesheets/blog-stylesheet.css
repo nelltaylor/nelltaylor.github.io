@@ -1,15 +1,14 @@
 html{
   background-color: #eeefef;
   font-family: Arial;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 #nav{
   width: 100%;
-  background-color: #dbfcfb;
-  padding-bottom: 10px;
-  font-size: 18px;
+  padding-bottom: 1%;
+  font-size: 1em;
   margin: 0px auto;
 }
 
@@ -21,42 +20,44 @@ html{
 
 #nav li{
   display: inline;
-  margin-left: -50px;
-  padding: 40px;
-  font-size: 16px;
+  padding: 2%;
 }
 
 #nav a{
-  color: #158581;
+  color: #606060;
   text-decoration: none;
   font-weight: bold;
 }
 
 #nav a:hover{
-  color: #12445c;
+  color: #89722a;
   text-decoration: none;
 }
 
 #nav img{
-  width: 100px;
-  height: 45px;
-  margin-bottom: -15px;
-  margin-left: 10px;
+  width: 10%;
+  height: 10%;
+  margin-bottom: -1.25%;
+  margin-left: -2%;
 }
 
 #blog-headline{
+  background-image: url("../imgs/pigeon.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   width: 100%;
   text-align: center;
-  background-color: #606060;
   color: #ffffff;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10%;
+  padding-bottom: 8%;
   margin: 0px;
 }
 
 #content-wrap{
   width: 100%;
   background-color: #ffffff;
+  padding-top: 1%;
+  padding-bottom: 1%;
   margin: 0px;
   display: inline-block;
 }
@@ -64,9 +65,8 @@ html{
 #footer{
   border-top: 4px solid #606060;
   width: 100%;
-  background-color: #dbfcfb;
-  padding-bottom: 10px;
-  font-size: 14px;
+  padding-bottom: 1%;
+  font-size: 1em;
   margin: 0;
 }
 
@@ -84,7 +84,7 @@ html{
 }
 
 #footer a{
-  color: #158581;
+  color: #606060;
   text-decoration: none;
   font-weight: bold;
 }
@@ -95,20 +95,22 @@ html{
 }
 
 #footer img{
-  width: 100px;
+  width: 135px;
   height: 45px;
   margin-bottom: -15px;
   margin-left: 10px
 }
 
 .current-post{
-  width: 68%;
+  width: 60%;
   display: inline-block;
-  margin: 2%;
+  margin-top: 2%;
+  margin-left: 6%;
+  margin-right: 4%;
 }
 
 .current-post p{
-    white-space: pre-line;
+  white-space: pre-line;
 }
 
 .current-post img{
@@ -116,19 +118,18 @@ html{
   max-width: 100%;
   width: 840px;
   height: 300px;
-  margin-top: 10px;
+  margin-top: 2%;
 }
 
 .post-preview{
   width: 45%;
   display: inline-block;
+  background-color: #eeefef;
   margin: 2%;
 }
 
 .post-preview p{
   white-space: pre-line;
-  background-color: #ffffff;
-  padding: 10px;
   margin: 0;
 }
 
@@ -143,25 +144,24 @@ html{
 
 .single-prev-post{
   padding: 20px;
-  background-color: #eeefef;
   margin-bottom: 20px;
+  background-color: #ffffff;
 }
 
 .recent-posts{
   width: 25%;
-  height: 600px;
+  height: auto;
+  padding: 0;
+  margin: 0;
   display: inline-block;
   vertical-align: top;
-  float: right;
-  margin-right: 2%;
 }
 
 .recent-posts50{
   width: 50%;
-  height: 600px;
+  height: auto;
   display: inline-block;
   vertical-align: top;
-  float: right;
 }
 
 .recent-posts img{
@@ -185,46 +185,47 @@ html{
 .single-r-post{
   padding-left: 10px;
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   background-color: #eeefef;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
 .single-r-post:hover{
-  background-color: #dbfcfb;
+  background-color: #d7d9e1;
 }
 
 .single-r-post50{
   width: 45%;
   display: inline-block;
-  padding-top: 10px;
   padding-left: 10px;
-  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #eeefef;
-  font-size: 16px;
+  font-size: 1em;
   margin-bottom: 10px;
   margin-right: 10px;
 }
 
 .single-r-post50:hover{
-  background-color: #dbfcfb;
+  background-color: #d7d9e1;
 }
 
 .older-posts{
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #dbfcfb;
-  margin-bottom: 10px;
+  background-color: #eeefef;
+  margin-bottom: 2%;
 }
 
 .older-posts50{
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #dbfcfb;
+  background-color: #eeefef;
   margin-right: 30px;
+  margin-bottom: 2%;
 }
 
 .older-posts a{
@@ -259,12 +260,12 @@ h2{
 }
 
 a{
-  color: #158581;
+  color: #7f859d;
   text-decoration: none;
 }
 
 a:hover{
-  color: #12445c;
+  color: #606060;
   text-decoration: none;
 }
 
